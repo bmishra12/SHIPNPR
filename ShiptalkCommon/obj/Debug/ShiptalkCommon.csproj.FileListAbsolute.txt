@@ -1,0 +1,15 @@
+C:\svn\SHIPNPR\ShiptalkCommon\bin\Debug\ShiptalkCommon.dll
+C:\svn\SHIPNPR\ShiptalkCommon\bin\Debug\ShiptalkCommon.pdb
+C:\svn\SHIPNPR\ShiptalkCommon\obj\Debug\ResolveAssemblyReference.cache
+C:\svn\SHIPNPR\ShiptalkCommon\obj\Debug\ShiptalkCommon.dll
+C:\svn\SHIPNPR\ShiptalkCommon\obj\Debug\ShiptalkCommon.pdb
+C:\svn\SHIPNPR - Copy\ShiptalkCommon\bin\Debug\ShiptalkCommon.dll
+C:\svn\SHIPNPR - Copy\ShiptalkCommon\bin\Debug\ShiptalkCommon.pdb
+C:\svn\SHIPNPR - Copy\ShiptalkCommon\obj\Debug\ResolveAssemblyReference.cache
+C:\svn\SHIPNPR - Copy\ShiptalkCommon\obj\Debug\ShiptalkCommon.dll
+C:\svn\SHIPNPR - Copy\ShiptalkCommon\obj\Debug\ShiptalkCommon.pdb
+C:\AIR\SHIPNPR\SHIPNPRCurr\ShiptalkCommon\bin\Debug\ShiptalkCommon.dll
+C:\AIR\SHIPNPR\SHIPNPRCurr\ShiptalkCommon\bin\Debug\ShiptalkCommon.pdb
+C:\AIR\SHIPNPR\SHIPNPRCurr\ShiptalkCommon\obj\Debug\ShiptalkCommon.csprojResolveAssemblyReference.cache
+C:\AIR\SHIPNPR\SHIPNPRCurr\ShiptalkCommon\obj\Debug\ShiptalkCommon.dll
+C:\AIR\SHIPNPR\SHIPNPRCurr\ShiptalkCommon\obj\Debug\ShiptalkCommon.pdb
