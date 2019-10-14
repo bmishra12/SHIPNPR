@@ -1,0 +1,215 @@
+
+/* CSS Document */
+
+/*css for Print pages*/
+html, body {
+    color: #000;
+    font-family: Arial;
+    font-size: 11px;
+	height: 100%;
+    margin:0;
+}
+
+.smaller{
+    font-size: 10px;
+}
+.smallest{
+    font-size: 9px;
+}
+
+.smaller .gray{
+    color: #6E6E6E;
+}
+
+
+/*a img { is a fix so IE doesn't display blue box around any image links*/
+a img {
+border:none;
+}
+
+
+
+a {
+    color: #6a3900;
+    text-decoration: underline;
+}
+
+a:hover{
+    color: #6a3900;
+    text-decoration: none;
+}
+
+h1 {
+    color: #555;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Arial;
+    margin: 0 0 5px 0;
+    padding: 0;
+}
+
+h2 {
+    color: #555;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    }
+
+h3, h4 {
+    color: #555;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    }
+
+
+
+p{
+    line-height: 1.2;
+}
+
+table{
+    border: solid 0px #555;
+}
+
+th{
+    font-weight: bold;
+    border: solid 0px #555;
+    padding: 2px;
+}
+    .tdHeader{
+        padding: 5px 0 10px 0;
+    }
+
+td{
+    border: solid 0px #555;
+    padding: 2px;
+    font-family: Arial;
+    font-size: 11px;
+}
+
+
+
+
+   
+    #body {
+		position: relative;
+        background: #fff;
+		overflow: hidden;
+		padding: 0;
+		width: 898px;
+    }
+		
+		
+
+.hide{display: none;}
+.show{display: block;}
+.clear {clear: both;}
+.alignRight { float:right; margin: 0 0 15px 15px; }
+.alignLeft { float:left; margin: 0 15px 15px 0; }
+.nopadding { padding: 0; }
+.nomargin { margin: 0; }
+.frame { padding: 5px; border: 1px solid #aaa; }
+.required { color: Red;}
+.tag { font-weight: bold; }
+
+table.formTable tbody tr td textarea, table.formTable tbody tr td select, table.formTable tbody tr td input[type='text']
+{
+	width: 325px;
+}
+
+table.formTable4col tbody tr td textarea, table.formTable4col tbody tr td select, table.formTable4col tbody tr td input[type='text']
+{
+	width: 200px;
+}
+
+table.formTable tbody tr td, table.formTable4col tbody tr td
+{
+	vertical-align: top;
+}
+
+.tdFormRequiredLabel{
+    width: 1px;
+}
+
+.tdFormLabel{
+    width: 125px;
+}
+
+table.dataTable 
+{
+	border-collapse:separate;
+	border-spacing: 0px;
+	display: table;
+	width: 100%;
+}
+
+	table.dataTable thead tr th
+	{
+		background:url("/images/bgHomeContentBox.png") repeat-x scroll 0 0 transparent;
+		color: #555555;
+		font-weight: bold;
+		font-family: Arial;
+		font-size: 11px;
+		border-bottom: 1px solid #94A8CF;
+		padding: 5px;
+		text-align: left;
+	}
+
+	table.dataTable tbody tr.even td {
+		background-color:#F0F0F6;
+	}
+
+
+
+.formAltRow{
+    background-color: #ddd;
+}
+
+
+
+
+
+
+.offscreen
+{
+                position: absolute;
+                left: -999em;
+}
+.TableBorder
+{
+	border-left-style:solid;
+	border-left-width:1px;
+	border-right-style:solid;
+	border-right-width:1px;
+}
+.TableHeaderBorder1
+{
+	border-top-style:solid;
+	border-top-width:1px;
+	border-bottom-style:solid;
+	border-bottom-width:1px
+}
+.TableHeaderBorder
+{
+	border-bottom-style:solid;
+	border-bottom-width:1px
+}
+.TDBorder
+{
+	border-bottom-style:solid;
+	border-bottom-width:1px;
+	font-family: Arial;
+    font-size: 11px;
+}
+
+.TDRightBorder
+{
+	border-right-style:solid;
+	border-right-width:1px
+}
+

@@ -1,0 +1,1036 @@
+
+/* CSS Document */
+
+/*css for all pages*/
+html, body {
+    background-color: #e1d5c3;
+    color: #000;
+    font-family: Arial;
+    font-size: 14px;
+	height: 100%;
+    margin:0;
+}
+
+.smaller{
+    font-size: 12px;
+}
+.smallest{
+    font-size: 11px;
+}
+
+.smaller .gray{
+    color: #6E6E6E;
+}
+
+
+/*a img { is a fix so IE doesn't display blue box around any image links*/
+a img {
+border:none;
+}
+
+
+
+a {
+    color: #6a3900;
+    text-decoration: underline;
+}
+
+a:hover{
+    color: #6a3900;
+    text-decoration: none;
+}
+
+h1 {
+    color: #555;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Arial;
+    margin: 0 0 5px 0;
+    padding: 0;
+}
+
+h2 {
+    color: #555;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    }
+
+h3 {
+    color: #555;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    }
+
+h4 {	
+    color: #555;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    }
+    
+h5 {
+    color: #555;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    }
+
+p{
+    line-height: 1.2;
+}
+
+table{
+    border: solid 0px #555;
+}
+
+th{
+    font-weight: bold;
+    border: solid 0px #555;
+    padding: 2px;
+}
+    .tdHeader{
+        padding: 5px 0 10px 0;
+    }
+
+td{
+    border: solid 0px #555;
+    padding: 4px;
+}
+
+/*  SKIP NAV */
+
+div#skipmenu{
+position:relative;
+}
+div#skipmenu a.skippy{
+position:absolute;
+top: -1000px;
+left:-1000px;
+height: 1px;
+width: 1px;
+overflow:hidden;
+}
+
+div#skipmenu a.skippy:active, div#skipmenu a.skippy:focus, div#skipmenu a.skippy:hover{
+position: absolute;
+top:auto;
+left:auto;
+width:100%;
+height: 1em;
+width: auto;
+font-size:1em;
+font-weight:bold;
+width:100%;
+padding-bottom:15px;
+color: black;
+z-index:100;
+text-align:right;
+margin-bottom:25px;
+}
+
+/*  END SKIP NAV */
+
+#container 
+{
+	background:none repeat scroll 0 0 #FFFFFF;
+    border-bottom: solid 1px #00539b;
+    border-left: solid 1px #00539b;
+    border-right: solid 1px #00539b;
+	position: relative;
+	top: 0px;
+	width: 898px;
+	margin: 0 auto;
+	overflow: hidden;
+	
+	}
+
+    /*header.layout.begin*/
+    
+    #header {
+        background-image: url('../images/nprheader.png');
+        height: 137px;
+        padding: 5px;
+    }
+        #searchBox {
+            float: right;
+            color: #fff;
+            font-size: 11px;
+            width: 204px;
+        }
+            #searchBox a {
+                color: #6a3900;
+                text-decoration: underline;
+            }
+
+            #searchBox a:hover{
+                color: #fff;
+                text-decoration: underline;
+            }
+    
+    /*header.layout.end*/
+    /*nav*/
+	#navigation{
+	    background: #3175b0;
+	    background: url('/images/bgNavBoxHeader.png');
+	    background-repeat: repeat-x;
+	    border-top: solid 1px #94a8cf;
+	    height: 25px;
+	    padding: 5px;
+	    width: 888px;
+	}
+	
+	ul.navbar{
+	    float: right;
+	    margin: 0;
+        padding:0;
+        list-style-type:none;
+        display:block;
+        height: 25px;
+    }
+        ul.navbar li{
+            display:inline;
+            float:left;
+            padding:0;
+        }
+            .tabLink a{
+                background-color: #c9d1e7;
+                color: #333; 
+                display:block;
+                text-decoration: none;
+                float:left; 
+                font-size: 11px;
+                font-weight: bold;
+                margin: 0 0 0 2px;
+                padding: 6px 10px;
+                height:13px;
+            }
+                    .tabLink a:hover{
+                         background-color: #6a3900;
+                         color: #fff; 
+                        }
+             .tabLinkActive a{
+                background-color: #6a3900;
+                color: #fff; 
+                display:block;
+                text-decoration: none;
+                float:left; 
+                font-size: 11px;
+                font-weight: bold;
+                margin: 0 0 0 2px;
+                padding: 6px 10px;
+                height:13px;
+            }
+            
+                    .tabLinkActive a:hover{
+                         background-color: #6a3900;
+                         color: #fff; 
+                        }
+                    .tabLinkActive a:visited{
+                        color: #fff; 
+                        }
+			/*end nav*/
+    
+    #body {
+		position: relative;
+        background: #fff;
+		overflow: hidden;
+		padding: 0;
+		width: 898px;
+    }
+        #sidebar{
+			float: left;
+			min-height: 350px;
+			padding: 20px 0px 20px 0;
+			width: 188px;
+		}
+            #sidebar_bottom{
+                position: relative;
+                margin: 17px 0 0 0;
+                padding: 5px;
+            }
+		
+		#maincontent{
+			position: relative;
+			float: right;
+			min-height: 350px;
+			padding: 19px;
+			width: 650px;
+		}
+		
+		
+		#maincontentwide{
+			position: relative;
+			float: right;
+			min-height: 350px;
+			padding: 19px;
+			width: 862px;
+		}
+		
+    #footer {
+        background: #fff;
+       /* color: #fff;*/
+        font-size: 10px;
+        padding: 0;
+         height: 15px;
+        text-align: center;
+
+    }
+    #footerNoHeight {
+        background: #fff;
+       /* color: #fff;*/
+        font-size: 10px;
+        padding: 0;
+        text-align: center;
+
+    }
+.hide{display: none;}
+.show{display: block;}
+.clear {clear: both;}
+.alignRight { float:right; margin: 0 0 15px 15px; }
+.alignLeft { float:left; margin: 0 15px 15px 0; }
+.nopadding { padding: 0; }
+.nomargin { margin: 0; }
+.frame { padding: 5px; border: 1px solid #aaa; }
+.required { color: Red;}
+.Notrequired { color: Blue;}
+.tag { font-weight: bold; }
+
+table.formTable tbody tr td textarea, table.formTable tbody tr td select, table.formTable tbody tr td input[type='text']
+{
+	width: 325px;
+}
+
+table.formTable4col tbody tr td textarea, table.formTable4col tbody tr td select, table.formTable4col tbody tr td input[type='text']
+{
+	width: 200px;
+}
+
+table.SpcialFieldTable tbody tr td input[type='text']
+{
+	width: 180px;
+}
+
+table.formTable tbody tr td, table.formTable4col tbody tr td
+{
+	vertical-align: top;
+}
+
+.tdFormRequiredLabel{
+    width: 1px;
+}
+
+.tdFormLabel{
+}
+
+table.dataTable 
+{
+	border-collapse:separate;
+	border-spacing: 0px;
+	display: table;
+	width: 100%;
+}
+
+	table.dataTable thead tr th
+	{
+		background:url("/images/bgHomeContentBox.png") repeat-x scroll 0 0 transparent;
+		color: #555555;
+		font-weight: bold;
+		border-bottom: 1px solid #94A8CF;
+		padding: 5px;
+		text-align: left;
+	}
+
+	table.dataTable tbody tr.even td {
+		background-color:#F0F0F6;
+	}
+
+div.section
+{
+	border-top: solid 2px #eee;
+	margin-top: 20px; 
+	width: 615px; 
+}
+div.section1
+{
+	
+	border-bottom: solid 2px #eee;
+	
+	margin-bottom: 10px; 
+	width: 615px; 
+}
+div.commands
+{
+	text-align: right; 
+	width: 100%;
+}
+
+.testtable{ border: solid 1px black;}
+.testtable td{ border: solid 1px black;}
+.testtable{ border: solid 1px black;}
+
+.checkbox1{
+    border: solid 1px #94a8cf;
+    margin: 0 5px 5px 0;
+    vertical-align: middle;
+}
+
+.checkbox2{
+    border: solid 0px #94a8cf;
+    vertical-align: middle;
+}
+
+.radio1{
+    border: solid 1px #94a8cf;
+    margin: 0 5px 5px 0;
+    vertical-align: middle;
+}
+
+.formbutton1{
+    background: #fff;
+    color: #6a3900;
+    height: 24px;
+    border: solid 1px #6a3900;
+    font-family: Arial;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.formbutton1a{
+    background: #6a3900;
+    color: #fff;
+    height: 24px;
+    border: solid 1px #6a3900;
+    font-family: Arial;
+    font-size: 11px;
+    font-weight: bold;
+    width: 125px;
+    margin: 25px 0 0 0;
+}
+
+.formbutton2{
+    float: right;
+    background: #fff;
+    color: #6a3900;
+    height: 24px;
+    border: solid 1px #6a3900;
+    font-family: Arial;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.formbutton3{
+    background: #fff;
+    color: #6a3900;
+    height: 24px;
+    border: solid 1px #6a3900;
+    font-family: Arial;
+    font-size: 11px;
+    font-weight: bold;
+    margin: 3px 0 0 0;
+}
+
+.formbutton4{
+    background: #fff;
+    color: #6a3900;
+    height: 32px;
+    border: solid 1px #6a3900;
+    font-family: Arial;
+    font-size: 11px;
+    font-weight: bold;
+    margin: 3px 0 0 0;
+}
+    
+.textfield1wm{
+    background: #fff;
+    color: Gray;
+    height: 20px;
+    width: 192px;
+    border: solid 1px #94a8cf;
+    font-family: Arial;
+    font-size: 12px;
+    padding: 4px 0 0 4px;
+    margin: 2px 0 2px 0;
+}
+
+.textfield1{
+    background: #fff;
+    height: 20px;
+    width: 192px;
+    border: solid 1px #94a8cf;
+    font-family: Arial;
+    font-size: 12px;
+    padding: 4px 0 0 4px;
+    margin: 2px 0 2px 0;
+}
+
+.textfield2wm{
+    background: #eee;
+    height: 20px;
+    width: 146px;
+    border: solid 0px #665c58;
+    font-family: Arial;
+    font-size: 12px;
+    padding: 4px 0 0 4px;
+    margin: 2px 0 2px 0;
+}
+
+.textfield2{
+    background: #fff;
+    height: 20px;
+    width: 146px;
+    border: solid 0px #fff;
+    font-family: Arial;
+    font-size: 12px;
+    padding: 4px 0 0 4px;
+    margin: 2px 0 2px 0;
+}
+
+.textfield3wm{
+    background: #fff;
+    color: Gray;
+    height: 20px;
+    width: 280px;
+    border: solid 1px #94a8cf;
+    font-family: Arial;
+    font-size: 12px;
+    padding: 4px 0 0 4px;
+    margin: 2px 0 2px 0;
+}
+
+.textfield3{
+    background: #fff;
+    height: 20px;
+    width: 280px;
+    border: solid 1px #94a8cf;
+    font-family: Arial;
+    font-size: 12px;
+    padding: 4px 0 0 4px;
+    margin: 2px 0 2px 0;
+}
+
+.textarea1{
+    background: #fff;
+    height: 198px;
+    width: 400px;
+    border: solid 1px #94a8cf;
+    font-family: Arial;
+    font-size: 12px;
+    padding: 4px 0 0 4px;
+    margin: 2px 0 2px 0;
+}
+
+.textarea1wm{
+    background: #eee;
+    height: 198px;
+    width: 400px;
+    border: solid 1px #94a8cf;
+    font-family: Arial;
+    font-size: 12px;
+    padding: 4px 0 0 4px;
+    margin: 2px 0 2px 0;
+}
+
+.dropdown1wm{
+    background: #eee;
+    border: solid 1px #94a8cf;
+    font-size:150%;
+    font-family: Arial;
+    font-size: 12px;
+    height: 25px;
+    width: 280px;
+    padding: 4px 4px 4px 2px;
+    margin: 2px 0 2px 0;
+}
+
+.dropdown1{
+    background: #fff;
+    border: solid 1px #94a8cf;
+    font-size:150%;
+    font-family: Arial;
+    font-size: 12px;
+    height: 25px;
+    width: 280px;
+    padding: 4px 4px 4px 2px;
+    margin: 2px 0 2px 0;
+}
+
+.dropdown2wm{
+    background: #eee;
+    border: solid 1px #94a8cf;
+    font-size:150%;
+    font-family: Arial;
+    font-size: 12px;
+    height: 25px;
+    width: 198px;
+    padding: 4px 4px 4px 2px;
+    margin: 2px 0 2px 0;
+}
+
+.dropdown2{
+    background: #fff;
+    border: solid 1px #94a8cf;
+    font-size:150%;
+    font-family: Arial;
+    font-size: 12px;
+    height: 25px;
+    width: 198px;
+    padding: 4px 4px 4px 2px;
+    margin: 2px 0 2px 0;
+}
+
+#form .error {
+	margin-left: 10px;
+	width: auto;
+	display: inline;
+}
+
+.validationMessage{
+    color: Orange;
+    font-size: 11px;
+}
+
+.formAltRow{
+    background-color: #ddd;
+}
+
+
+.dvMainChoices
+{
+    padding: 25px;
+}
+
+.dv1col
+{
+    float: left;
+    width: 195px;
+}
+.dv2col
+{
+    float: left;
+    width: 410px;
+}
+.dv3col
+{
+    background: url('/images/bgHomeContentBox.png');
+    background-repeat: repeat-x;
+    border: solid 1px #94a8cf;
+    float: left;
+    margin-bottom: 20px;
+    padding: 15px;
+    width: 617px;  
+}
+
+.dv3colFormContent
+{
+	margin-top: 10px; 
+	width: 615px;
+	border-top: solid 2px #eee;
+}
+	
+	
+.dv4colleft
+{   
+    background: url('/images/bgHomeContentBox.png');
+    background-repeat: repeat-x;
+    border: solid 1px #94a8cf;
+    float: left;
+    margin-bottom: 20px;
+    padding: 15px;
+    width: 280px;
+}
+
+.dv4colnone
+{   
+    background: url('/images/bgHomeContentBox.png');
+    background-repeat: repeat-x;
+    border: solid 1px #94a8cf;
+    float: none;
+    margin-bottom: 20px;
+    padding: 15px;
+    width: 280px;
+}
+.dv4colright
+{
+    background: url('/images/bgHomeContentBox.png');
+    background-repeat: repeat-x;
+    border: solid 1px #94a8cf;
+    float: right;
+    margin-bottom: 20px;
+    padding: 15px;
+    width: 280px;
+}
+.dv5col
+{
+    background: url('/images/bgHomeContentBox.png');
+    background-repeat: repeat-x;
+    border: solid 1px #94a8cf;
+    float: left;
+    margin-bottom: 20px;
+    padding: 15px;
+    width: 830px;  
+}
+.dvPad{width: 20px;}
+
+.dvFindAShip{
+    background: url('/images/bgHomeFindAShipBox.png');
+    background-repeat: no-repeat;
+    min-height: 178px;
+}
+.dvFindACounselor{
+    background: url('/images/bgHomeFindACounselorBox.png');
+    background-repeat: no-repeat;
+    min-height: 178px;
+}
+
+/* LEFT NAVS */
+.leftNavBox1{
+    border-bottom: solid 1px #94a8cf;
+    border-right: solid 1px #94a8cf;
+    border-top: solid 1px #94a8cf;
+    width: 208px;
+    overflow: auto;
+}
+
+.leftNavBox2{
+    background: url('/images/bgNavBoxContent.png');
+    background-repeat: repeat-x;
+    border-bottom: solid 1px #94a8cf;
+    border-right: solid 1px #94a8cf;
+    border-top: solid 1px #94a8cf;
+    color: #fff;
+    padding: 5px;
+    width: 198px;
+    overflow: auto;
+}
+
+.leftNavHeader{
+    position: relative;
+    background: url('/images/bgNavBoxHeader.png');
+    background: #3175b0;
+    background-repeat: repeat-x;
+    border-bottom: solid 1px #94a8cf;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px;
+    width: 198px;
+    min-height: 15px;
+    overflow: hidden;
+    
+}
+
+.leftNavContent{
+    background: #c9d1e7;
+    background: #fff;
+    font-size: 12px;
+    padding: 5px;
+    width: 198px;
+}
+
+.leftNav{
+        position: relative;
+	    margin: 0;
+        padding:0;
+        list-style-type:none;
+        display:block;
+    }
+        .leftNav li{
+            display:inline;
+            float:left;
+            padding:0;
+            position: relative;
+        }
+            .leftTabLink a{
+                background-color: #c9d1e7;
+                border-bottom: solid 1px #94a8cf;
+                border-top: solid 1px #fff;
+                color: #333; 
+                display:block;
+                text-decoration: none;
+                float:left; 
+                font-size: 11px;
+                font-weight: bold;
+                height:13px;
+                padding: 7px;
+                width: 194px;
+            }
+                    .leftTabLink a:hover{
+                        background-color: #6a3900;
+                        border-bottom: solid 1px #665c58;
+                        border-top: solid 1px #665c58;
+                        color: #fff; 
+                        }
+                    .leftTabLink a:visited{
+                        color: #333; 
+                        }	
+                    .leftTabLink a:visited{
+                        color: #333; 
+                    }
+/* END LEFT NAVS */
+
+/* INFO LIB NAVS */
+
+.ilNavigation{
+}
+
+.ilNavbar{
+    position: relative;
+    margin: 0;
+    padding:0;
+    list-style-type:none;
+    display:block;
+}
+    .ilNavbar li{
+        display:inline;
+        float:left;
+        padding:0;
+        position: relative;
+    }
+        .ilTabLinkFolder a{
+            background: url('/images/ilBgFolder.png');
+            color: #6a3900; 
+            display:block;
+            float:left;
+            font-size: 14px;
+            height:57px;
+            margin: 15px;
+            padding: 100px 5px 0 5px;
+            text-decoration: none;
+            text-align: center;
+            width: 113px;
+        }
+                .ilTabLinkFolder a:hover{
+                    background: url('/images/ilBgFolderHover.png');
+                    color: #333;
+                    }
+                .ilTabLinkFolder a:visited{
+                    color: #6a3900;
+                    }
+        .ilTabLinkPdf a{
+            background: url('/images/ilBgPdf.png');
+            color: #6a3900; 
+            display:block;
+            float:left;
+            font-size: 14px;
+            height:57px;
+            margin: 15px;
+            padding: 100px 5px 0 5px;
+            text-decoration: none;
+            text-align: center;
+            width: 113px;
+        }
+                .ilTabLinkPdf a:hover{
+                    background: url('/images/ilBgPdfHover.png');
+                    color: #333;
+                    }
+                .ilTabLinkPdf a:visited{
+                    color: #6a3900;
+                    }
+        .ilTabLinkDoc a{
+            background: url('/images/ilBgDoc.png');
+            color: #6a3900; 
+            display:block;
+            float:left;
+            font-size: 14px;
+            height:57px;
+            margin: 15px;
+            padding: 100px 5px 0 5px;
+            text-decoration: none;
+            text-align: center;
+            width: 113px;
+        }
+                .ilTabLinkDoc a:hover{
+                    background: url('/images/ilBgDocHover.png');
+                    color: #333;
+                    }
+                .ilTabLinkDoc a:visited{
+                    color: #6a3900;
+                    }
+        .ilTabLinkTxt a{
+            background: url('/images/ilBgTxt.png');
+            color: #6a3900; 
+            display:block;
+            float:left;
+            font-size: 14px;
+            height:57px;
+            margin: 15px;
+            padding: 100px 5px 0 5px;
+            text-decoration: none;
+            text-align: center;
+            width: 113px;
+        }
+                .ilTabLinkTxt a:hover{
+                    background: url('/images/ilBgTxtHover.png');
+                    color: #333;
+                    }
+                .ilTabLinkTxt a:visited{
+                    color: #6a3900;
+                    }
+/* END INFO LIB NAVS */
+
+
+.offscreen
+{
+                position: absolute;
+                left: -999em;
+}
+.TableBorder
+{
+	border-left-style:solid;
+	border-left-width:1px;
+	border-right-style:solid;
+	border-right-width:1px;
+}
+.TableHeaderBorder1
+{
+	border-top-style:solid;
+	border-top-width:1px;
+	border-bottom-style:solid;
+	border-bottom-width:1px
+}
+.TableHeaderBorder
+{
+	border-bottom-style:solid;
+	border-bottom-width:1px
+}
+.TDBorder
+{
+	border-bottom-style:solid;
+	border-bottom-width:1px;
+	
+}
+
+.TDRightBorder
+{
+	border-right-style:solid;
+	border-right-width:1px
+}
+
+table.formTable tbody tr td textarea.CCcomment
+{
+width:800px;
+}
+
+ .welcomeBanner {
+    background-color: #6a3900;
+    color: #fff; 
+    display:block;
+    text-decoration: none;
+    float:left; 
+    font-size: 11px;
+    font-weight: bold;
+    margin: 0 0 0 2px;
+    padding: 6px 10px;
+}
+
+
+/* InfoLib section - Begin */
+		/*
+		#InfoLibItemsSubLevel ul
+        {
+        	margin: 0px;
+        	padding-top: 0px;
+        	padding-bottom: 0px;
+        }
+		*/
+        #InfoLibItems li
+        {
+        	margin-top: 0px;
+        	margin-bottom: 0px;
+        	line-height: 14px;
+			/*list-style-type: circle;*/
+        }
+        
+        #InfoLibItems li.parent
+        {
+        	list-style-image: url('/images/arrow_ltr.gif');
+        	margin-top: 16px;
+        	margin-bottom: 0px;
+            font-family: Bookman Old Style, Book Antiqua, Arial;
+            font-size: 16px;
+        }
+         #InfoLibItems li.parent .AdminLinks
+        {
+        	padding-top:  6px;
+        }
+        #InfoLibItems li.child
+        {
+        	margin-top: 10px;
+        	margin-bottom: 4px;
+        	list-style-type: circle;
+            font-family: Book Antiqua, Arial;
+            font-size: 14px;
+            /*line-height: 14px;*/
+        }
+         #InfoLibItems li.child .AdminLinks
+        {
+        	padding-top:  6px;
+        }
+       
+        #InfoLibItems li .ItemIdText
+        {
+            font-size: 10px;
+            font-family: Arial;
+        }
+        
+        #InfoLibItems a
+        {
+        	margin-top: 0px;
+        	margin-bottom: 0px;
+        	padding-top: 0px;
+            padding-bottom: 0px;
+        }
+        #InfoLibItems a.admlinks
+        {
+        	margin-top: 0px;
+        	margin-bottom: 0px;
+            font-family: Bookman Old Style, Book Antiqua, Arial;
+            font-size: 10px;
+        }
+        .ParentTitleText
+        {
+            font-family: Bookman Old Style, Book Antiqua, Arial;
+            font-size: 28px;
+            text-decoration: underline;
+            padding-left: 40px;
+            text-align: center;
+        }
+         #InfoLibTopLevelItems li
+        {
+            list-style-image: url(/images/arrow_ltr.gif);
+            margin-top: 12px;
+            font-family: Bookman Old Style, Book Antiqua, Arial;
+            font-size: 18px;
+            margin-left: 40px;
+        }
+        #InfoLibTopLevelItems li .ItemIdText
+        {
+            font-size: 10px;
+            font-family: Arial;
+        }
+        #InfoLibTopLevelItems a.x_admlinks
+        {
+            font-family: Bookman Old Style, Book Antiqua, Arial;
+            font-size: 10px;
+        }
+        .TopLevelText
+        {
+            margin-top: 12px;
+            font-family: Bookman Old Style, Book Antiqua, Arial;
+            font-size: 28px;
+            text-decoration: underline;
+            padding-left: 70px;
+        }
+
+/* Infolib section - End*/
+
