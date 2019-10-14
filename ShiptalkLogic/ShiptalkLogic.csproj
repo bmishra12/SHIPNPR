@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C397494C-D9D2-4BE8-87D9-F50A736FE0BE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ShiptalkLogic</RootNamespace>
+    <AssemblyName>ShiptalkLogic</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Dev|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Dev\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Prod|AnyCPU' ">
+    <OutputPath>bin\Prod\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper">
+      <HintPath>..\..\SHIPNPR3.0\ShiptalkLogic\bin\Release\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common">
+      <HintPath>..\..\SHIPNPR3.0\ShiptalkLogic\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data">
+      <HintPath>..\..\SHIPNPR3.0\ShiptalkLogic\bin\Release\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Validation">
+      <HintPath>..\..\SHIPNPR3.0\ShiptalkLogic\bin\Release\Microsoft.Practices.EnterpriseLibrary.Validation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Validation.Integration.AspNet">
+      <HintPath>..\..\SHIPNPR3.0\ShiptalkLogic\bin\Release\Microsoft.Practices.EnterpriseLibrary.Validation.Integration.AspNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\ShiptalkCommon\bin\Debug\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TallComponents.PDF.Kit">
+      <HintPath>..\ShiptalkWeb\Bin\TallComponents.PDF.Kit.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BusinessLayer\ApproverRulesBLL.cs" />
+    <Compile Include="BusinessLayer\CCFBLL.cs" />
+    <Compile Include="BusinessLayer\CCFileUploadBLL.cs" />
+    <Compile Include="BusinessLayer\AccessRulesBLL.cs" />
+    <Compile Include="BusinessLayer\CCSummaryReportBLL.cs" />
+    <Compile Include="BusinessLayer\InfoLibBLL.cs" />
+    <Compile Include="BusinessLayer\LastLoginBLL.cs" />
+    <Compile Include="BusinessLayer\PamBLL.cs" />
+    <Compile Include="BusinessLayer\PamFileUpLoadBLL.cs" />
+    <Compile Include="BusinessLayer\PAMSummaryReportBLL.cs" />
+    <Compile Include="BusinessLayer\RegisterUserBLL\RegistrationEmails.cs" />
+    <Compile Include="BusinessLayer\RegisterUserBLL\VerifyEmail.cs" />
+    <Compile Include="BusinessLayer\ReportSubStateRegionBLL.cs" />
+    <Compile Include="BusinessLayer\ResourceReportBLL.cs" />
+    <Compile Include="BusinessLayer\SHIPProfileBLL.cs" />
+    <Compile Include="BusinessLayer\SpecialFieldsBLL.cs" />
+    <Compile Include="BusinessLayer\UserBLL.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BusinessLayer\UserSubStateRegionBLL.cs" />
+    <Compile Include="BusinessLayer\UserCMSBLL.cs" />
+    <Compile Include="BusinessLayer\LookupBLL.cs" />
+    <Compile Include="BusinessLayer\RegisterUserBLL\CMSRegisterUserBLL.cs" />
+    <Compile Include="BusinessLayer\RegisterUserBLL\AgencyRegisterUserBLL.cs" />
+    <Compile Include="BusinessLayer\RegisterUserBLL\RegisterUserImplBase.cs" />
+    <Compile Include="BusinessLayer\RegisterUserBLL\SubStateRegisterUserBLL.cs" />
+    <Compile Include="BusinessLayer\RegisterUserBLL\StateRegisterUserBLL.cs" />
+    <Compile Include="BusinessLayer\RoutesBLL.cs" />
+    <Compile Include="BusinessLayer\UserAgencyBLL.cs" />
+    <Compile Include="BusinessLayer\AgencyBLL.cs" />
+    <Compile Include="BusinessLayer\Validators\AgencyNameValidator.cs" />
+    <Compile Include="BusinessLayer\Validators\AgencyNameValidatorAttribute.cs" />
+    <Compile Include="BusinessLayer\Validators\CounselorCountyCodeValidator.cs" />
+    <Compile Include="BusinessLayer\Validators\CounselorCountyCodeValidatorAttribute.cs" />
+    <Compile Include="BusinessLayer\Validators\CounselorZIPCodeValidator.cs" />
+    <Compile Include="BusinessLayer\Validators\CounselorZIPCodeValidatorAttribute.cs" />
+    <Compile Include="BusinessLayer\Validators\ZIPCodeValidator.cs" />
+    <Compile Include="BusinessLayer\Validators\ZIPCodeValidatorAttribute.cs" />
+    <Compile Include="BusinessObjects\Agency.cs" />
+    <Compile Include="BusinessObjects\AgencyAddress.cs" />
+    <Compile Include="BusinessObjects\AgencyLocation.cs" />
+    <Compile Include="BusinessObjects\CCFBO.cs" />
+    <Compile Include="BusinessObjects\CCSummaryReport.cs" />
+    <Compile Include="BusinessObjects\ClientContact.cs" />
+    <Compile Include="BusinessObjects\FormType.cs" />
+    <Compile Include="BusinessObjects\GeocodeResponse.cs" />
+    <Compile Include="BusinessObjects\GoogleMapsService.cs" />
+    <Compile Include="BusinessObjects\InfoLibForumCallItem.cs" />
+    <Compile Include="BusinessObjects\InfoLibItemFile.cs" />
+    <Compile Include="BusinessObjects\InfoLibItem.cs" />
+    <Compile Include="BusinessObjects\LastLoginInfo.cs" />
+    <Compile Include="BusinessObjects\LatLng.cs" />
+    <Compile Include="BusinessObjects\LookupBO.cs" />
+    <Compile Include="BusinessLayer\RegisterUserBLL.cs" />
+    <Compile Include="BusinessObjects\OldShipUserInfo.cs" />
+    <Compile Include="BusinessObjects\PAMBO.cs" />
+    <Compile Include="BusinessObjects\PAMSummaryReport.cs" />
+    <Compile Include="BusinessObjects\PublicMediaEvent.cs" />
+    <Compile Include="BusinessObjects\ReportSubstateBO.cs" />
+    <Compile Include="BusinessObjects\Route.cs" />
+    <Compile Include="BusinessObjects\SHIPProfile.cs" />
+    <Compile Include="BusinessObjects\SpecialField.cs" />
+    <Compile Include="BusinessObjects\SpecialFieldValue.cs" />
+    <Compile Include="BusinessObjects\SubStateRegion.cs" />
+    <Compile Include="BusinessObjects\SubStateRegionForReport.cs" />
+    <Compile Include="BusinessObjects\UI\AddAgencyLocationViewData.cs" />
+    <Compile Include="BusinessObjects\UI\AddClientContactViewData.cs" />
+    <Compile Include="BusinessObjects\UI\AddPublicMediaEventViewData.cs" />
+    <Compile Include="BusinessObjects\UI\AddressViewData.cs" />
+    <Compile Include="BusinessObjects\UI\AddSubStateRegionViewData.cs" />
+    <Compile Include="BusinessObjects\UI\AgencyIdentifiers.cs" />
+    <Compile Include="BusinessObjects\UI\AddSubStateRegionForReportViewData.cs" />
+    <Compile Include="BusinessObjects\UI\EditSubStateRegionForReportViewData.cs" />
+    <Compile Include="BusinessObjects\UI\ViewSubStateRegionForReportViewData.cs" />
+    <Compile Include="BusinessObjects\UI\EditClientContactViewData.cs" />
+    <Compile Include="BusinessObjects\UI\SearchClientContactsViewData.cs" />
+    <Compile Include="BusinessObjects\UI\SearchPublicMediaEventViewData.cs" />
+    <Compile Include="BusinessObjects\UI\EditPublicMediaEventViewData.cs" />
+    <Compile Include="BusinessObjects\UI\EditAgencyLocationViewData.cs" />
+    <Compile Include="BusinessObjects\UI\EditShipProfileViewData.cs" />
+    <Compile Include="BusinessObjects\UI\EditSubStateRegionViewData.cs" />
+    <Compile Include="BusinessObjects\UI\SearchSubStateRegionForReportViewData.cs" />
+    <Compile Include="BusinessObjects\UI\SearchSubStateRegionsViewData.cs" />
+    <Compile Include="BusinessObjects\UI\UserSearchViewData.cs" />
+    <Compile Include="BusinessObjects\UI\UserSummaryViewData.cs" />
+    <Compile Include="BusinessObjects\UI\EditAgencyViewData.cs" />
+    <Compile Include="BusinessObjects\UI\SearchAgenciesViewData.cs" />
+    <Compile Include="BusinessObjects\UI\PendingApprovalUserViewData.cs" />
+    <Compile Include="BusinessObjects\UI\UserViewData.cs" />
+    <Compile Include="BusinessObjects\UI\ViewAgencyLocationViewData.cs" />
+    <Compile Include="BusinessObjects\UI\ViewAgencyProfileLocationViewData.cs" />
+    <Compile Include="BusinessObjects\UI\ViewAgencyProfileView.cs" />
+    <Compile Include="BusinessObjects\UI\ViewAgencyViewData.cs" />
+    <Compile Include="BusinessObjects\UI\ViewCCSummaryReportViewData.cs" />
+    <Compile Include="BusinessObjects\UI\ViewClientContactViewData.cs" />
+    <Compile Include="BusinessObjects\UI\ViewPAMSummaryReportViewData.cs" />
+    <Compile Include="BusinessObjects\UI\ViewPublicMediaEventViewData.cs" />
+    <Compile Include="BusinessObjects\UI\ViewResourceReportViewData.cs" />
+    <Compile Include="BusinessObjects\UI\ViewSHIPProfileViewData.cs" />
+    <Compile Include="BusinessObjects\UI\ViewSpecialFieldsViewData.cs" />
+    <Compile Include="BusinessObjects\UI\ViewSubStateRegionViewData.cs" />
+    <Compile Include="BusinessObjects\UI\ZipCountyView.cs" />
+    <Compile Include="BusinessObjects\User.cs" />
+    <Compile Include="BusinessObjects\UserRegistration.cs" />
+    <Compile Include="BusinessObjects\Role.cs" />
+    <Compile Include="BusinessObjects\County.cs" />
+    <Compile Include="BusinessObjects\ShiptalkKeyValuePair.cs" />
+    <Compile Include="BusinessObjects\IAddress.cs" />
+    <Compile Include="BusinessObjects\IIsActive.cs" />
+    <Compile Include="BusinessObjects\IModified.cs" />
+    <Compile Include="BusinessObjects\ShiptalkPrincipal.cs" />
+    <Compile Include="BusinessObjects\State.cs" />
+    <Compile Include="BusinessObjects\UI\RegisterAgencyViewData.cs" />
+    <Compile Include="BusinessObjects\UserDescriptor.cs" />
+    <Compile Include="BusinessObjects\UserReviewer.cs" />
+    <Compile Include="BusinessObjects\UserUniqueID.cs" />
+    <Compile Include="BusinessObjects\ValidationType.cs" />
+    <Compile Include="BusinessObjects\ZipCode.cs" />
+    <Compile Include="DataLayer\CCFDAL.cs" />
+    <Compile Include="DataLayer\CCSummaryReportDAL.cs" />
+    <Compile Include="DataLayer\DALBase.cs" />
+    <Compile Include="DataLayer\FileUploadDAL.cs" />
+    <Compile Include="DataLayer\FormDALBase.cs" />
+    <Compile Include="DataLayer\GeoProgramSearchHandler.cs" />
+    <Compile Include="DataLayer\InfoLibDAL.cs" />
+    <Compile Include="DataLayer\LookupDAL.cs" />
+    <Compile Include="DataLayer\PAMDAL.cs" />
+    <Compile Include="DataLayer\PAMSummaryReportDAL.cs" />
+    <Compile Include="DataLayer\RegisterUserDAL.cs" />
+    <Compile Include="DataLayer\ReportsDAL.cs" />
+    <Compile Include="DataLayer\RoutesDAL.cs" />
+    <Compile Include="DataLayer\SHIPProfileDAL.cs" />
+    <Compile Include="DataLayer\SpecialFieldsDAL.cs" />
+    <Compile Include="DataLayer\StoredProcNames.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="DataLayer\AgencyDAL.cs" />
+    <Compile Include="DataLayer\QueryUtil.cs" />
+    <Compile Include="DataLayer\SubStateRegionForReportDAL.cs" />
+    <Compile Include="DataLayer\UserAgencyDAL.cs" />
+    <Compile Include="DataLayer\UserCMSDAL.cs" />
+    <Compile Include="DataLayer\UserDAL.cs" />
+    <Compile Include="DataLayer\UserSubStateRegionDAL.cs" />
+    <Compile Include="Extensions.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="BusinessObjects\UserAccount.cs" />
+    <Compile Include="BusinessObjects\UserRegionalAccessProfile.cs" />
+    <Compile Include="BusinessObjects\UserProfile.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BusinessObjects\ClassDiagram1.cd" />
+    <None Include="obj\Debug\ResolveAssemblyReference.cache" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ShiptalkCommon\ShiptalkCommon.csproj">
+      <Project>{633EB903-3E2F-46C2-A14D-81AED7978755}</Project>
+      <Name>ShiptalkCommon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="obj\Debug\Refactor\ShiptalkLogic.dll" />
+    <Content Include="obj\Debug\ShiptalkLogic.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\ShiptalkLogic.dll" />
+    <Content Include="obj\Debug\ShiptalkLogic.pdb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DataSets\" />
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
