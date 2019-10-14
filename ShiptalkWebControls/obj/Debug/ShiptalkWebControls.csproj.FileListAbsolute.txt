@@ -1,0 +1,29 @@
+C:\SHIPNPR4.0\ShiptalkWebControls\obj\Debug\ResolveAssemblyReference.cache
+C:\SHIPNPR4.0\ShiptalkWebControls\bin\Debug\ShiptalkWebControls.dll
+C:\SHIPNPR4.0\ShiptalkWebControls\bin\Debug\ShiptalkWebControls.pdb
+C:\SHIPNPR4.0\ShiptalkWebControls\obj\Debug\ShiptalkWebControls.dll
+C:\SHIPNPR4.0\ShiptalkWebControls\obj\Debug\ShiptalkWebControls.pdb
+C:\vs2010\SHIPNPR4.1\ShiptalkWebControls\bin\Debug\ShiptalkWebControls.dll
+C:\vs2010\SHIPNPR4.1\ShiptalkWebControls\bin\Debug\ShiptalkWebControls.pdb
+C:\vs2010\SHIPNPR4.1\ShiptalkWebControls\obj\Debug\ResolveAssemblyReference.cache
+C:\vs2010\SHIPNPR4.1\ShiptalkWebControls\obj\Debug\ShiptalkWebControls.dll
+C:\vs2010\SHIPNPR4.1\ShiptalkWebControls\obj\Debug\ShiptalkWebControls.pdb
+C:\CMS\CMS\SHIPNPR4.1\ShiptalkWebControls\bin\Debug\ShiptalkWebControls.dll
+C:\CMS\CMS\SHIPNPR4.1\ShiptalkWebControls\bin\Debug\ShiptalkWebControls.pdb
+C:\CMS\CMS\SHIPNPR4.1\ShiptalkWebControls\obj\Debug\ResolveAssemblyReference.cache
+C:\CMS\CMS\SHIPNPR4.1\ShiptalkWebControls\obj\Debug\ShiptalkWebControls.dll
+C:\CMS\CMS\SHIPNPR4.1\ShiptalkWebControls\obj\Debug\ShiptalkWebControls.pdb
+C:\svn\SHIPNPR\ShiptalkWebControls\bin\Debug\ShiptalkWebControls.dll
+C:\svn\SHIPNPR\ShiptalkWebControls\bin\Debug\ShiptalkWebControls.pdb
+C:\svn\SHIPNPR\ShiptalkWebControls\obj\Debug\ResolveAssemblyReference.cache
+C:\svn\SHIPNPR\ShiptalkWebControls\obj\Debug\ShiptalkWebControls.dll
+C:\svn\SHIPNPR\ShiptalkWebControls\obj\Debug\ShiptalkWebControls.pdb
+C:\svn\SHIPNPR - Copy\ShiptalkWebControls\bin\Debug\ShiptalkWebControls.dll
+C:\svn\SHIPNPR - Copy\ShiptalkWebControls\bin\Debug\ShiptalkWebControls.pdb
+C:\svn\SHIPNPR - Copy\ShiptalkWebControls\obj\Debug\ResolveAssemblyReference.cache
+C:\svn\SHIPNPR - Copy\ShiptalkWebControls\obj\Debug\ShiptalkWebControls.dll
+C:\svn\SHIPNPR - Copy\ShiptalkWebControls\obj\Debug\ShiptalkWebControls.pdb
+C:\AIR\SHIPNPR\SHIPNPRCurr\ShiptalkWebControls\bin\Debug\ShiptalkWebControls.dll
+C:\AIR\SHIPNPR\SHIPNPRCurr\ShiptalkWebControls\bin\Debug\ShiptalkWebControls.pdb
+C:\AIR\SHIPNPR\SHIPNPRCurr\ShiptalkWebControls\obj\Debug\ShiptalkWebControls.dll
+C:\AIR\SHIPNPR\SHIPNPRCurr\ShiptalkWebControls\obj\Debug\ShiptalkWebControls.pdb
