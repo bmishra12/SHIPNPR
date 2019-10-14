@@ -1,0 +1,118 @@
+<%@ Import Namespace="ShiptalkWeb.Routing" %>
+
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="ShiptalkWeb.master.cs"
+    Inherits="ShiptalkWeb.ShiptalkWeb" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<%@ Import Namespace="ShiptalkWeb.WebUtility" %>
+<%@ Import Namespace="ShiptalkCommon" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+<%@ Register Src="UserControls/ucNavLeft.ascx" TagName="NavLeft" TagPrefix="air" %>
+<%@ Register Src="UserControls/ucSearch.ascx" TagName="Search" TagPrefix="air" %>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <link id="style" rel="stylesheet" type="text/css" href="css/global.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui-1.7.2.custom.css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <%--<form id="form2" runat="server">--%>
+    <form id="MasterForm" runat="server">
+    <asp:ScriptManager ID="scriptManager" runat="server">
+        <Scripts>
+            <asp:ScriptReference Path="~/scripts/global.js" />
+        </Scripts>
+    </asp:ScriptManager>
+    <div id="skipmenu">
+        <a href="#skip" class="skippy">Skip Navigation</a> <a name="top"></a>
+    </div>
+    <!-- end skipmenu -->
+    <div id="container">
+        <div id="header">
+            <div id="searchBox" style="display: none;">
+                <air:Search ID="Search1" runat="server" />
+            </div>
+        </div>
+        <div id="navigation">
+            <asp:LoginView ID="TopMenu" runat="server">
+                <AnonymousTemplate>
+                    <ul id="navbar" class="navbar">
+                       <li id="Li7" class="tabLinkActive">
+                           
+                            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/SHIP/SHIPProfileview.aspx">Find a SHIP</asp:HyperLink>
+                        </li>
+                           <li id="Li8" class="tabLinkActive">
+                           
+                            <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/SHIP/SHIPAgencyProfileView.aspx">Find a Counselor</asp:HyperLink>
+                        </li>
+                        <li id="tabLink1" class="tabLinkActive">
+                            <%--** DO NOT NEED REGISTER TAB WHEN REGISTER PAGE IS THE ONLY PAGE AVAILABLE **--%>
+                            <asp:HyperLink ID="href3" runat="server" NavigateUrl="~/UserRegistration.aspx">REGISTER</asp:HyperLink>
+                        </li>
+                    </ul>
+                </AnonymousTemplate>
+                <LoggedInTemplate>
+
+                     <ul class="navbar" >
+<<<<<<< ShiptalkWeb.Master
+                     <li id="userTabLink1" class="tabLinkActive"><a>You are logged in as <asp:LoginName id="LoginName1" runat="Server"></asp:LoginName>.</a></li>
+                            <li id="userTabLink4" class="tabLink"><a runat="server" href='<%# RouteController.AgencySearch() %>' id="A1">Agency</a></li>
+                            <li id="Li1" class="tabLink"><a runat="server" href='<%# RouteController.UserSearch() %>' id="A2">User</a></li>
+
+                                                      <li id="Li3" class="tabLink"><a runat="server" href='<%# RouteController.EditMyProfile() %>' id="A4">Edit My Profile</a></li>
+
+                          <li id="Li2" class="tabLink"><a runat="server" href='<%# RouteController.ResourceReportSearch() %>' id="A3">RR</a></li>
+                           <li id="Li4" class="tabLink"><a runat="server" href='<%# RouteController.CcfAdd() %>' id="A7">CC</a></li>
+                           <li id="Li6" class="tabLink"><a runat="server" href='<%# RouteController.PamAdd() %>' id="A8">PAM</a></li>
+                            <li id="Li9" class="tabLink"><a runat="server" href='<%# RouteController.UploadFile() %>' id="A6">Upload</a></li>
+
+                              <li id="Li8" class="tabLink"><a runat="server" href='<%# RouteController.ShipProfileEdit() %>' id="A5">ShipProfile</a></li>
+                              
+                        <%--<li id="Li2" class="tabLink"><a href="javascript:openTab(2);" id="A3">Reports</a></li>--%>
+
+                        <li id="usertabLink4" class="tabLink"><asp:LoginStatus ID="LoginStatus1" LogoutAction="Redirect" LogoutPageUrl="~/UserRegistration.aspx" OnLoggedOut="LoginStatus1_LoggedOut" Runat="server" /></li>
+
+=======
+                        <li id="userTabLink1" class="tabLinkActive"><a>You are logged in as
+                            <asp:LoginName ID="LoginName1" runat="Server"></asp:LoginName>
+                            </a></li>
+                        <li id="userTabLink4" class="tabLink" visible='<%# CanViewLink(UserLinks.Agency) %>' runat="server"><a runat="server" href='<%# RouteController.AgencySearch() %>'
+                            id="A1">Agency</a></li>
+                        <li id="Li1" class="tabLink" visible='<%# CanViewLink(UserLinks.User) %>' runat="server"><a runat="server"
+                            href='<%# RouteController.UserSearch() %>' id="A2">User</a></li>
+                        <li id="Li3" class="tabLink"><a runat="server" href='<%# RouteController.EditMyProfile() %>'
+                            id="A4">Edit My Profile</a></li>
+                        <li id="Li5" class="tabLink" visible='<%# CanViewLink(UserLinks.ResourceReport) %>' runat="server">
+                            <a runat="server" href='<%# RouteController.ResourceReportSearch() %>' id="A3">RR</a></li>
+                        <li id="Li4" class="tabLink" visible='<%# CanViewLink(UserLinks.ClientContactForm) %>' runat="server">
+                            <a runat="server" href='<%# RouteController.CcfAdd() %>' id="A7">CC</a></li>
+                        <li id="Li2" class="tabLink" visible='<%# CanViewLink(UserLinks.Upload) %>' runat="server">
+                            <a runat="server" href='<%# RouteController.UploadFile() %>' id="A6">Upload</a></li>
+                        <li id="Li6" class="tabLink" visible='<%# CanViewLink(UserLinks.ShipProfile) %>' runat="server">
+                            <a runat="server" href='<%# RouteController.ShipProfileEdit() %>' id="A5">ShipProfile</a></li>
+                        <li id="Li9" class="tabLink" visible='<%# CanViewLink(UserLinks.NPRReports) %>' runat="server">
+                            <a runat="server" href='<%# RouteController.NprReports() %>' id="A8">NPRReports</a></li>
+                        <li id="usertabLink4" class="tabLink">
+                            <asp:LoginStatus ID="LoginStatus1" LogoutAction="Redirect" LogoutPageUrl="~/UserRegistration.aspx"
+                                OnLoggedOut="LoginStatus1_LoggedOut" runat="server" />
+                        </li>
+>>>>>>> 1.42
+                    </ul>
+                </LoggedInTemplate>
+            </asp:LoginView>
+        </div>
+        <div id="body">
+            <div id="sidebar">
+                <air:NavLeft ID="NavLeft1" runat="server" />
+            </div>
+            <a name="skip"></a>
+            <asp:ContentPlaceHolder ID="body1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div id="footer">
+        </div>
+    </div>
+    </form>
+</body>
+</html>

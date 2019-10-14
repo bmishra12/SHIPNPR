@@ -1,0 +1,1121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{87B3FD5E-79B3-48AF-8D5C-D7F647077672}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ShiptalkWeb</RootNamespace>
+    <AssemblyName>ShiptalkWeb</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>SecurityRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>x86</PlatformTarget>
+    <ExcludeGeneratedDebugSymbol>false</ExcludeGeneratedDebugSymbol>
+    <ExcludeApp_Data>false</ExcludeApp_Data>
+    <FilesToIncludeForPublish>OnlyFilesToRunTheApp</FilesToIncludeForPublish>
+    <CodeAnalysisIgnoreGeneratedCode>false</CodeAnalysisIgnoreGeneratedCode>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Dev|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Prod|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=3.0.20820.20753, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="AntiXSSLibrary, Version=3.1.3524.16873, Culture=neutral, PublicKeyToken=d127efab8a9c114f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\AntiXSSLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="FredCK.FCKeditorV2, Version=2.6.3.22451, Culture=neutral, PublicKeyToken=4f86767c9b519a06, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\FredCK.FCKeditorV2.dll</HintPath>
+    </Reference>
+    <Reference Include="Lanap.BotDetect, Version=2.0.13.0, Culture=neutral, PublicKeyToken=74616036388b765f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\Lanap.BotDetect.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Validation, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\Microsoft.Practices.EnterpriseLibrary.Validation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Validation.Integration.AspNet, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\Microsoft.Practices.EnterpriseLibrary.Validation.Integration.AspNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Web.UI.WebControls, Version=2.0.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\Microsoft.Practices.Web.UI.WebControls.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Routing">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="TallComponents.PDF.Kit">
+      <HintPath>..\..\PDFKit.NET_4.0.21.0\Microsoft.NET 2.0\TallComponents.PDF.Kit.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Agency\AgencyRegister.aspx" />
+    <Content Include="Agency\AgencySearch.aspx" />
+    <Content Include="Agency\AgencyView.aspx" />
+    <Content Include="Agency\LocationView.aspx" />
+    <Content Include="Bin\AjaxControlToolkit.dll" />
+    <Content Include="Bin\AntiXSSLibrary.dll" />
+    <Content Include="Bin\Lanap.BotDetect.dll" />
+    <Content Include="Bin\Microsoft.Practices.ObjectBuilder2.dll" />
+    <Content Include="Bin\Microsoft.Practices.Unity.dll" />
+    <Content Include="Bin\Microsoft.Practices.Web.UI.WebControls.dll" />
+    <Content Include="Bin\ShiptalkWeb.dll" />
+    <Content Include="Bin\ShiptalkWeb.pdb" />
+    <Content Include="FindCounselor.aspx" />
+    <Content Include="fulldictionary.txt" />
+    <Content Include="GeoProgramSearch.aspx" />
+    <Content Include="GPSearch.aspx" />
+    <Content Include="images\bluedot.png" />
+    <Content Include="images\NPRheader.png" />
+    <Content Include="images\Reddot.jpg" />
+    <Content Include="images\ShpTlkbtn.jpg" />
+    <Content Include="Npr\Docs\UserManual.aspx" />
+    <Content Include="Npr\Forms\CCF.aspx" />
+    <Content Include="Npr\Reports\CCSummary.aspx" />
+    <Content Include="Npr\Reports\CCSummaryReport.aspx" />
+    <Content Include="Npr\Reports\PAMSummary.aspx" />
+    <Content Include="Npr\Reports\PAMSummaryReport.aspx" />
+    <Content Include="Npr\Reports\RRSummary.aspx" />
+    <Content Include="Npr\Reports\RRSummaryReport.aspx" />
+    <Content Include="Npr\Forms\ResourceReportFAdd.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Agency\AgencyEdit.aspx.cs">
+      <DependentUpon>AgencyEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Agency\AgencyEdit.aspx.designer.cs">
+      <DependentUpon>AgencyEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Agency\EditShipProfile.aspx.cs">
+      <DependentUpon>EditShipProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Agency\EditShipProfile.aspx.designer.cs">
+      <DependentUpon>EditShipProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Agency\LocationAdd.aspx.cs">
+      <DependentUpon>LocationAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Agency\LocationAdd.aspx.designer.cs">
+      <DependentUpon>LocationAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Agency\LocationEdit.aspx.cs">
+      <DependentUpon>LocationEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Agency\LocationEdit.aspx.designer.cs">
+      <DependentUpon>LocationEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Agency\SubStateRegionAdd.aspx.cs">
+      <DependentUpon>SubStateRegionAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ErrorPages\404.aspx.cs">
+      <DependentUpon>404.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ErrorPages\404.aspx.designer.cs">
+      <DependentUpon>404.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorPages\UnAuthorizedAccess.aspx.cs">
+      <DependentUpon>UnAuthorizedAccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ErrorPages\UnAuthorizedAccess.aspx.designer.cs">
+      <DependentUpon>UnAuthorizedAccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorPages\ExceptionTest.aspx.cs">
+      <DependentUpon>ExceptionTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ErrorPages\ExceptionTest.aspx.designer.cs">
+      <DependentUpon>ExceptionTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorPages\SessionExpired.aspx.cs">
+      <DependentUpon>SessionExpired.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ErrorPages\SessionExpired.aspx.designer.cs">
+      <DependentUpon>SessionExpired.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FindCounselor.aspx.cs">
+      <DependentUpon>FindCounselor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FindCounselor.aspx.designer.cs">
+      <DependentUpon>FindCounselor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GeoProgramSearch.aspx.cs">
+      <DependentUpon>GeoProgramSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GeoProgramSearch.aspx.designer.cs">
+      <DependentUpon>GeoProgramSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="GPSearch.aspx.cs">
+      <DependentUpon>GPSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GPSearch.aspx.designer.cs">
+      <DependentUpon>GPSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KeepAlive.aspx.cs">
+      <DependentUpon>KeepAlive.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KeepAlive.aspx.designer.cs">
+      <DependentUpon>KeepAlive.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Npr\Docs\UserManual.aspx.cs">
+      <DependentUpon>UserManual.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Npr\Docs\UserManual.aspx.designer.cs">
+      <DependentUpon>UserManual.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Npr\Forms\CCF.aspx.designer.cs">
+      <DependentUpon>CCF.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Npr\Forms\CCFEdit.aspx.cs">
+      <DependentUpon>CCFEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Npr\Forms\CCFEdit.aspx.designer.cs">
+      <DependentUpon>CCFEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Npr\Forms\CCFSearch.aspx.cs">
+      <DependentUpon>CCFSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Npr\Forms\CCFSearch.aspx.designer.cs">
+      <DependentUpon>CCFSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Npr\Forms\CCFView.aspx.cs">
+      <DependentUpon>CCFView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Npr\Forms\CCFView.aspx.designer.cs">
+      <DependentUpon>CCFView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Npr\Forms\PAMF.aspx.cs">
+      <DependentUpon>PAMF.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Npr\Forms\PAMF.aspx.designer.cs">
+      <DependentUpon>PAMF.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Npr\Forms\PAMFEdit.aspx.cs">
+      <DependentUpon>PAMFEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Npr\Forms\PAMFEdit.aspx.designer.cs">
+      <DependentUpon>PAMFEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Npr\Forms\PAMFSearch.aspx.cs">
+      <DependentUpon>PAMFSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Npr\Forms\PAMFSearch.aspx.designer.cs">
+      <DependentUpon>PAMFSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Npr\Forms\PAMFView.aspx.cs">
+      <DependentUpon>PAMFView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Npr\Forms\PAMFView.aspx.designer.cs">
+      <DependentUpon>PAMFView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Npr\Forms\ResourceReportFEdit.aspx.cs">
+      <DependentUpon>ResourceReportFEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Npr\Forms\ResourceReportFEdit.aspx.designer.cs">
+      <DependentUpon>ResourceReportFEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Npr\Forms\ResourceReportFView.aspx.cs">
+      <DependentUpon>ResourceReportFView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Npr\Forms\ResourceReportFView.aspx.designer.cs">
+      <DependentUpon>ResourceReportFView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Npr\Forms\RRF.aspx.cs">
+      <DependentUpon>RRF.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Npr\Forms\RRF.aspx.designer.cs">
+      <DependentUpon>RRF.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Npr\Forms\RRFSearch.aspx.cs">
+      <DependentUpon>RRFSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Npr\Forms\RRFSearch.aspx.designer.cs">
+      <DependentUpon>RRFSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Npr\Forms\SpecialFieldsFAdd.aspx.cs">
+      <DependentUpon>SpecialFieldsFAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Npr\Forms\SpecialFieldsFAdd.aspx.designer.cs">
+      <DependentUpon>SpecialFieldsFAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Npr\Forms\SpecialFieldsFEdit.aspx.cs">
+      <DependentUpon>SpecialFieldsFEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Npr\Forms\SpecialFieldsFEdit.aspx.designer.cs">
+      <DependentUpon>SpecialFieldsFEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Npr\Forms\SpecialFieldsFSearch.aspx.cs">
+      <DependentUpon>SpecialFieldsFSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Npr\Forms\SpecialFieldsFSearch.aspx.designer.cs">
+      <DependentUpon>SpecialFieldsFSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Npr\Forms\SpecialFieldsFView.aspx.cs">
+      <DependentUpon>SpecialFieldsFView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Npr\Forms\SpecialFieldsFView.aspx.designer.cs">
+      <DependentUpon>SpecialFieldsFView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Npr\Reports\SubStateRegionEditForReport.aspx.cs">
+      <DependentUpon>SubStateRegionEditForReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Npr\Reports\SubStateRegionEditForReport.aspx.designer.cs">
+      <DependentUpon>SubStateRegionEditForReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Npr\Reports\SubStateRegionAddForReport.aspx.cs">
+      <DependentUpon>SubStateRegionAddForReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Npr\Reports\SubStateRegionAddForReport.aspx.designer.cs">
+      <DependentUpon>SubStateRegionAddForReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Npr\Reports\SubStateRegionSearchForReport.aspx.cs">
+      <DependentUpon>SubStateRegionSearchForReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Npr\Reports\SubStateRegionSearchForReport.aspx.designer.cs">
+      <DependentUpon>SubStateRegionSearchForReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Npr\Reports\SubStateRegionViewForReport.aspx.cs">
+      <DependentUpon>SubStateRegionViewForReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Npr\Reports\SubStateRegionViewForReport.aspx.designer.cs">
+      <DependentUpon>SubStateRegionViewForReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Agency\SubStateRegionAdd.aspx.designer.cs">
+      <DependentUpon>SubStateRegionAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Agency\SubStateRegionEdit.aspx.cs">
+      <DependentUpon>SubStateRegionEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Agency\SubStateRegionEdit.aspx.designer.cs">
+      <DependentUpon>SubStateRegionEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Agency\SubStateRegionView.aspx.cs">
+      <DependentUpon>SubStateRegionView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Agency\SubStateRegionView.aspx.designer.cs">
+      <DependentUpon>SubStateRegionView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorPages\CustomError.aspx.cs">
+      <DependentUpon>CustomError.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ErrorPages\CustomError.aspx.designer.cs">
+      <DependentUpon>CustomError.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewPass.aspx.cs">
+      <DependentUpon>NewPass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewPass.aspx.designer.cs">
+      <DependentUpon>NewPass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmailConf.aspx.cs">
+      <DependentUpon>EmailConf.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmailConf.aspx.designer.cs">
+      <DependentUpon>EmailConf.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Extensions.cs" />
+    <Compile Include="Privacy.aspx.cs">
+      <DependentUpon>Privacy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Privacy.aspx.designer.cs">
+      <DependentUpon>Privacy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Agency\AgencyRegister.aspx.cs">
+      <DependentUpon>AgencyRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Agency\AgencyRegister.aspx.designer.cs">
+      <DependentUpon>AgencyRegister.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Agency\AgencySearch.aspx.cs">
+      <DependentUpon>AgencySearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Agency\AgencySearch.aspx.designer.cs">
+      <DependentUpon>AgencySearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Agency\AgencyView.aspx.cs">
+      <DependentUpon>AgencyView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Agency\AgencyView.aspx.designer.cs">
+      <DependentUpon>AgencyView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Agency\LocationView.aspx.cs">
+      <DependentUpon>LocationView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Agency\LocationView.aspx.designer.cs">
+      <DependentUpon>LocationView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Npr\Forms\CCF.aspx.cs">
+      <DependentUpon>CCF.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Npr\Reports\CCSummary.aspx.cs">
+      <DependentUpon>CCSummary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Npr\Reports\CCSummary.aspx.designer.cs">
+      <DependentUpon>CCSummary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Npr\Reports\CCSummaryReport.aspx.cs">
+      <DependentUpon>CCSummaryReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Npr\Reports\CCSummaryReport.aspx.designer.cs">
+      <DependentUpon>CCSummaryReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Npr\Reports\PAMSummary.aspx.cs">
+      <DependentUpon>PAMSummary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Npr\Reports\PAMSummary.aspx.designer.cs">
+      <DependentUpon>PAMSummary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Npr\Reports\PAMSummaryReport.aspx.cs">
+      <DependentUpon>PAMSummaryReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Npr\Reports\PAMSummaryReport.aspx.designer.cs">
+      <DependentUpon>PAMSummaryReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Npr\Reports\RRSummary.aspx.cs">
+      <DependentUpon>RRSummary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Npr\Reports\RRSummary.aspx.designer.cs">
+      <DependentUpon>RRSummary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Npr\Reports\RRSummaryReport.aspx.cs">
+      <DependentUpon>RRSummaryReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Npr\Reports\RRSummaryReport.aspx.designer.cs">
+      <DependentUpon>RRSummaryReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Npr\Forms\ResourceReportFAdd.aspx.cs">
+      <DependentUpon>ResourceReportFAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Npr\Forms\ResourceReportFAdd.aspx.designer.cs">
+      <DependentUpon>ResourceReportFAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ResetPassword.aspx.cs">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ResetPassword.aspx.designer.cs">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Routing\AuthorizeRoute.cs" />
+    <Compile Include="Routing\AuthorizeRouteHandler.cs" />
+    <Compile Include="Routing\IAuthorize.cs" />
+    <Compile Include="Routing\IRouteDataPage.cs" />
+    <Compile Include="Routing\RouteController.cs" />
+    <Compile Include="ShipNPR_Reports\CCSummaryReport.aspx.cs">
+      <DependentUpon>CCSummaryReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShipNPR_Reports\CCSummaryReport.aspx.designer.cs">
+      <DependentUpon>CCSummaryReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShipNPR_Reports\NprPAMReportSearch.aspx.cs">
+      <DependentUpon>NprPAMReportSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShipNPR_Reports\NprPAMReportSearch.aspx.designer.cs">
+      <DependentUpon>NprPAMReportSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShipNPR_Reports\NprReports.aspx.cs">
+      <DependentUpon>NprReports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShipNPR_Reports\NprReports.aspx.designer.cs">
+      <DependentUpon>NprReports.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShipNPR_Reports\PAMSummaryReport.aspx.cs">
+      <DependentUpon>PAMSummaryReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShipNPR_Reports\PAMSummaryReport.aspx.designer.cs">
+      <DependentUpon>PAMSummaryReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SHIPprofile.aspx.cs">
+      <DependentUpon>SHIPprofile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SHIPprofile.aspx.designer.cs">
+      <DependentUpon>SHIPprofile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShiptalkWeb.Master.cs">
+      <DependentUpon>ShiptalkWeb.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShiptalkWeb.Master.designer.cs">
+      <DependentUpon>ShiptalkWeb.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ShiptalkWebWide.Master.cs">
+      <DependentUpon>ShiptalkWebWide.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShiptalkWebWideNoTab.Master.cs">
+      <DependentUpon>ShiptalkWebWideNoTab.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SHIP\GeneratePDF.aspx.cs">
+      <DependentUpon>GeneratePDF.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SHIP\GeneratePDF.aspx.designer.cs">
+      <DependentUpon>GeneratePDF.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SHIP\SHIPAgencyProfileView.aspx.cs">
+      <DependentUpon>SHIPAgencyProfileView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SHIP\SHIPAgencyProfileView.aspx.designer.cs">
+      <DependentUpon>SHIPAgencyProfileView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SHIP\SHIPProfileEdit.aspx.cs">
+      <DependentUpon>SHIPProfileEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SHIP\SHIPProfileEdit.aspx.designer.cs">
+      <DependentUpon>SHIPProfileEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SHIP\SHIPProfileView.aspx.cs">
+      <DependentUpon>SHIPProfileView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SHIP\SHIPProfileView.aspx.designer.cs">
+      <DependentUpon>SHIPProfileView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Upload\UploadFile.aspx.cs">
+      <DependentUpon>UploadFile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Upload\UploadFile.aspx.designer.cs">
+      <DependentUpon>UploadFile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Upload\Validator.cs" />
+    <Compile Include="UserControls\ucNavLeft.ascx.cs">
+      <DependentUpon>ucNavLeft.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucNavLeft.ascx.designer.cs">
+      <DependentUpon>ucNavLeft.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucSearch.ascx.cs">
+      <DependentUpon>ucSearch.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucSearch.ascx.designer.cs">
+      <DependentUpon>ucSearch.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucSessionMgr.ascx.cs">
+      <DependentUpon>ucSessionMgr.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucSessionMgr.ascx.designer.cs">
+      <DependentUpon>ucSessionMgr.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserTab.ascx.cs">
+      <DependentUpon>UserTab.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UserTab.ascx.designer.cs">
+      <DependentUpon>UserTab.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Admin\AddPresentor.aspx.cs">
+      <DependentUpon>AddPresentor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Admin\AddPresentor.aspx.designer.cs">
+      <DependentUpon>AddPresentor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Admin\ApproveUser.aspx.cs">
+      <DependentUpon>ApproveUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Admin\ApproveUser.aspx.designer.cs">
+      <DependentUpon>ApproveUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Admin\InActiveUserList.aspx.cs">
+      <DependentUpon>InActiveUserList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Admin\InActiveUserList.aspx.designer.cs">
+      <DependentUpon>InActiveUserList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Admin\PendingEmailChangeUserEdit.aspx.cs">
+      <DependentUpon>PendingEmailChangeUserEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Admin\PendingEmailChangeUserEdit.aspx.designer.cs">
+      <DependentUpon>PendingEmailChangeUserEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Admin\PendingEmailChangeUserView.aspx.cs">
+      <DependentUpon>PendingEmailChangeUserView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Admin\PendingEmailChangeUserView.aspx.designer.cs">
+      <DependentUpon>PendingEmailChangeUserView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Admin\PendingEmailChangeVerifications.aspx.cs">
+      <DependentUpon>PendingEmailChangeVerifications.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Admin\PendingEmailChangeVerifications.aspx.designer.cs">
+      <DependentUpon>PendingEmailChangeVerifications.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\ChangeEmail.aspx.cs">
+      <DependentUpon>ChangeEmail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\ChangeEmail.aspx.designer.cs">
+      <DependentUpon>ChangeEmail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Admin\DesignateUserApprover.aspx.cs">
+      <DependentUpon>DesignateUserApprover.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Admin\DesignateUserApprover.aspx.designer.cs">
+      <DependentUpon>DesignateUserApprover.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Admin\FindUserApprovers.aspx.cs">
+      <DependentUpon>FindUserApprovers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Admin\FindUserApprovers.aspx.designer.cs">
+      <DependentUpon>FindUserApprovers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Admin\PendingRegistrationUserView.aspx.cs">
+      <DependentUpon>PendingRegistrationUserView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Admin\PendingRegistrationUserView.aspx.designer.cs">
+      <DependentUpon>PendingRegistrationUserView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Admin\PendingUniqueIdRequests.aspx.cs">
+      <DependentUpon>PendingUniqueIdRequests.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Admin\PendingUniqueIdRequests.aspx.designer.cs">
+      <DependentUpon>PendingUniqueIdRequests.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Admin\PendingUniqueIdUserView.aspx.cs">
+      <DependentUpon>PendingUniqueIdUserView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Admin\PendingUniqueIdUserView.aspx.designer.cs">
+      <DependentUpon>PendingUniqueIdUserView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Admin\PendingUserRegistrations.aspx.cs">
+      <DependentUpon>PendingUserRegistrations.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Admin\PendingUserRegistrations.aspx.designer.cs">
+      <DependentUpon>PendingUserRegistrations.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Admin\UserAgencyProfileAdd.aspx.cs">
+      <DependentUpon>UserAgencyProfileAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Admin\UserAgencyProfileAdd.aspx.designer.cs">
+      <DependentUpon>UserAgencyProfileAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Admin\UserList.aspx.cs">
+      <DependentUpon>UserList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Admin\UserList.aspx.designer.cs">
+      <DependentUpon>UserList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Admin\UserSubStateProfileAdd.aspx.cs">
+      <DependentUpon>UserSubStateProfileAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Admin\UserSubStateProfileAdd.aspx.designer.cs">
+      <DependentUpon>UserSubStateProfileAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Admin\UserAgencyProfileView.aspx.cs">
+      <DependentUpon>UserAgencyProfileView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Admin\UserAgencyProfileView.aspx.designer.cs">
+      <DependentUpon>UserAgencyProfileView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Admin\UserAgencyProfileEdit.aspx.cs">
+      <DependentUpon>UserAgencyProfileEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Admin\UserAgencyProfileEdit.aspx.designer.cs">
+      <DependentUpon>UserAgencyProfileEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Admin\UserEdit.aspx.cs">
+      <DependentUpon>UserEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Admin\UserEdit.aspx.designer.cs">
+      <DependentUpon>UserEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Admin\UserSubStateProfileEdit.aspx.cs">
+      <DependentUpon>UserSubStateProfileEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Admin\UserSubStateProfileEdit.aspx.designer.cs">
+      <DependentUpon>UserSubStateProfileEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Admin\UserView.aspx.cs">
+      <DependentUpon>UserView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Admin\UserView.aspx.designer.cs">
+      <DependentUpon>UserView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Admin\UserSubStateProfileView.aspx.cs">
+      <DependentUpon>UserSubStateProfileView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Admin\UserSubStateProfileView.aspx.designer.cs">
+      <DependentUpon>UserSubStateProfileView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Admin\UserAdd.aspx.cs">
+      <DependentUpon>UserAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Admin\UserAdd.aspx.designer.cs">
+      <DependentUpon>UserAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Inactivity180.aspx.cs">
+      <DependentUpon>Inactivity180.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Inactivity180.aspx.designer.cs">
+      <DependentUpon>Inactivity180.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\EditMyProfile.aspx.cs">
+      <DependentUpon>EditMyProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\EditMyProfile.aspx.designer.cs">
+      <DependentUpon>EditMyProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\UserSearch.aspx.cs">
+      <DependentUpon>UserSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\UserSearch.aspx.designer.cs">
+      <DependentUpon>UserSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\UserHome.aspx.cs">
+      <DependentUpon>UserHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\UserHome.aspx.designer.cs">
+      <DependentUpon>UserHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserRegistration.aspx.cs">
+      <DependentUpon>UserRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserRegistration.aspx.designer.cs">
+      <DependentUpon>UserRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebEventMailFormatter.aspx.cs">
+      <DependentUpon>WebEventMailFormatter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebEventMailFormatter.aspx.designer.cs">
+      <DependentUpon>WebEventMailFormatter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Npr\Forms\ResourceReportSearch.aspx.cs">
+      <DependentUpon>ResourceReportSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Npr\Forms\ResourceReportSearch.aspx.designer.cs">
+      <DependentUpon>ResourceReportSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebUtility\ErrorHandlerUtil.cs" />
+    <Compile Include="WebUtility\PasswordValidation.cs" />
+    <Compile Include="WebUtility\QueryStringHelper.cs" />
+    <Compile Include="WebUtility\ShiptalkPrincipal.cs" />
+    <Compile Include="WebUtility\SessionUtil.cs" />
+    <Compile Include="WebUtility\SettingsUtil.cs" />
+    <Compile Include="WordCache.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ShiptalkCommon\ShiptalkCommon.csproj">
+      <Project>{633EB903-3E2F-46C2-A14D-81AED7978755}</Project>
+      <Name>ShiptalkCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ShiptalkLogic\ShiptalkLogic.csproj">
+      <Project>{C397494C-D9D2-4BE8-87D9-F50A736FE0BE}</Project>
+      <Name>ShiptalkLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ShiptalkWebControls\ShiptalkWebControls.csproj">
+      <Project>{49F38C40-91C3-4C27-AB3F-ABC5201211EC}</Project>
+      <Name>ShiptalkWebControls</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\global.css" />
+    <Content Include="scripts\global.js" />
+    <Content Include="scripts\jquery-1.3.2.js" />
+    <Content Include="SHIP\GeneratePDF.aspx" />
+    <Content Include="scripts\json2.js" />
+    <Content Include="SHIPprofile.aspx" />
+    <Content Include="ShiptalkWeb.Master" />
+    <Content Include="src\jquery-1.5.min.js" />
+    <Content Include="src\jquery-1.8.3.min.js" />
+    <Content Include="src\jquery-ui-1.7.3.min.js" />
+    <Content Include="UserControls\ucNavLeft.ascx" />
+    <Content Include="UserControls\ucSearch.ascx" />
+    <Content Include="User\Admin\ApproveUser.aspx" />
+    <Content Include="User\Admin\InActiveUserList.aspx" />
+    <Content Include="User\Admin\PendingEmailChangeUserEdit.aspx" />
+    <Content Include="User\Admin\PendingEmailChangeUserView.aspx" />
+    <Content Include="User\Admin\PendingEmailChangeVerifications.aspx" />
+    <Content Include="User\Inactivity180.aspx" />
+    <Content Include="User\UserHome.aspx" />
+    <Content Include="Logout.aspx" />
+    <Content Include="UserRegistration.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Agency\AgencyEdit.aspx" />
+    <Content Include="EmailConf.aspx" />
+    <Content Include="ResetPassword.aspx" />
+    <Content Include="scripts\jquery-1.3.2-vsdoc.js" />
+    <Content Include="scripts\jquery.charcounter.js" />
+    <Content Include="scripts\jquery-ui-mask-1.7.2.js" />
+    <Content Include="User\ChangePassword.aspx" />
+    <Content Include="User\Admin\UserAdd.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\ajax-loader.gif" />
+    <Content Include="NewPass.aspx" />
+    <Content Include="Agency\LocationAdd.aspx" />
+    <Content Include="Agency\LocationEdit.aspx" />
+    <Content Include="css\images\ui-bg_flat_0_94a8cf_40x100.png" />
+    <Content Include="css\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="css\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="css\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="css\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="css\images\ui-bg_glass_75_ffffff_1x400.png" />
+    <Content Include="css\images\ui-bg_highlight-soft_75_94a8cf_1x100.png" />
+    <Content Include="css\images\ui-bg_inset-soft_95_fef1ec_1x100.png" />
+    <Content Include="css\images\ui-icons_222222_256x240.png" />
+    <Content Include="css\images\ui-icons_6a3900_256x240.png" />
+    <Content Include="css\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="css\jquery-ui-1.7.2.custom.css" />
+    <Content Include="ShiptalkWebWide.Master" />
+    <Content Include="TemplateWide.aspx" />
+    <Content Include="UserControls\ucSessionMgr.ascx" />
+    <Content Include="User\UserSearch.aspx" />
+    <Content Include="WebEventMailFormatter.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ErrorPages\CustomError.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Agency\EditShipProfile.aspx" />
+    <Content Include="Bin\AutoMapper.dll" />
+    <Content Include="Bin\Microsoft.Practices.EnterpriseLibrary.Common.dll" />
+    <Content Include="Bin\Microsoft.Practices.EnterpriseLibrary.Data.dll" />
+    <Content Include="Bin\Microsoft.Practices.EnterpriseLibrary.Validation.dll" />
+    <Content Include="Bin\Microsoft.Practices.EnterpriseLibrary.Validation.Integration.AspNet.dll" />
+    <Content Include="Bin\ShiptalkCommon.dll" />
+    <Content Include="Bin\ShiptalkCommon.pdb" />
+    <Content Include="Bin\ShiptalkLogic.dll" />
+    <Content Include="Bin\ShiptalkLogic.pdb" />
+    <Content Include="Bin\ShiptalkWebControls.dll" />
+    <Content Include="Bin\ShiptalkWebControls.pdb" />
+    <Content Include="ErrorPages\404.aspx" />
+    <Content Include="ErrorPages\ExceptionTest.aspx" />
+    <Content Include="ErrorPages\SessionExpired.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="images\activestatus.PNG" />
+    <Content Include="images\inactivestatus.PNG" />
+    <Content Include="Npr\Forms\CCFEdit.aspx" />
+    <Content Include="Npr\Forms\CCFSearch.aspx" />
+    <Content Include="Npr\Forms\CCFView.aspx" />
+    <Content Include="Npr\Forms\PAMF.aspx" />
+    <Content Include="Npr\Forms\PAMFEdit.aspx" />
+    <Content Include="Npr\Forms\PAMFSearch.aspx" />
+    <Content Include="Npr\Forms\PAMFView.aspx" />
+    <Content Include="Npr\Forms\ResourceReportFEdit.aspx" />
+    <Content Include="Npr\Forms\ResourceReportFView.aspx" />
+    <Content Include="Npr\Forms\RRF.aspx" />
+    <Content Include="Npr\Forms\RRFSearch.aspx" />
+    <Content Include="Npr\Forms\SpecialFieldsFAdd.aspx" />
+    <Content Include="Npr\Forms\SpecialFieldsFEdit.aspx" />
+    <Content Include="Npr\Forms\SpecialFieldsFSearch.aspx" />
+    <Content Include="Npr\Forms\SpecialFieldsFView.aspx" />
+    <Content Include="Npr\Reports\SubStateRegionEditForReport.aspx" />
+    <Content Include="Npr\Reports\SubStateRegionAddForReport.aspx" />
+    <Content Include="Npr\Reports\SubStateRegionSearchForReport.aspx" />
+    <Content Include="Npr\Reports\SubStateRegionViewForReport.aspx" />
+    <Content Include="scripts\jquery-ui-1.7.2.js" />
+    <Content Include="scripts\jquery.metadata.js" />
+    <Content Include="scripts\jquery.tablesorter.js" />
+    <Content Include="scripts\jquery.tablesorter.pager.js" />
+    <Content Include="ShipNPR_Reports\CCSummaryReport.aspx" />
+    <Content Include="ShipNPR_Reports\NprPAMReportSearch.aspx" />
+    <Content Include="ShipNPR_Reports\NprReports.aspx" />
+    <Content Include="ShipNPR_Reports\PAMSummaryReport.aspx" />
+    <Content Include="SHIP\SHIPAgencyProfileView.aspx" />
+    <Content Include="SHIP\SHIPProfileEdit.aspx" />
+    <Content Include="SHIP\SHIPProfileView.aspx" />
+    <Content Include="Agency\SubStateRegionAdd.aspx" />
+    <Content Include="Agency\SubStateRegionEdit.aspx" />
+    <Content Include="Agency\SubStateRegionView.aspx" />
+    <Content Include="Privacy.aspx" />
+    <Content Include="Upload\UploadFile.aspx" />
+    <Content Include="User\Admin\AddPresentor.aspx" />
+    <Content Include="User\Admin\DesignateUserApprover.aspx" />
+    <Content Include="User\Admin\FindUserApprovers.aspx" />
+    <Content Include="User\Admin\PendingRegistrationUserView.aspx" />
+    <Content Include="User\Admin\PendingUserRegistrations.aspx" />
+    <Content Include="User\Admin\UserAgencyProfileAdd.aspx" />
+    <Content Include="User\Admin\UserList.aspx" />
+    <Content Include="User\Admin\UserSubStateProfileAdd.aspx" />
+    <Content Include="User\Admin\UserAgencyProfileView.aspx" />
+    <Content Include="User\Admin\UserAgencyProfileEdit.aspx" />
+    <Content Include="User\Admin\UserEdit.aspx" />
+    <Content Include="User\Admin\UserSubStateProfileEdit.aspx" />
+    <Content Include="User\Admin\UserView.aspx" />
+    <Content Include="User\Admin\UserSubStateProfileView.aspx" />
+    <Content Include="User\EditMyProfile.aspx" />
+    <Content Include="Npr\Forms\ResourceReportSearch.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Npr\Docs\Chapter_1_NPR_Overview_508.pdf" />
+    <None Include="Npr\Docs\Chapter_2_NPR_Client_Form_508.pdf" />
+    <None Include="Npr\Docs\Chapter_3_NPR_PAM_508.pdf" />
+    <None Include="Npr\Docs\Chapter_4_NPR_Resource_508.pdf" />
+    <None Include="Npr\Docs\Chapter_5_NPR_Reports_508.pdf" />
+    <None Include="Npr\Docs\Chapter_6_NPR_Password_Inst_508.pdf" />
+    <None Include="Npr\Docs\Client_Contact_Form_508_3-20-12.pdf" />
+    <None Include="Npr\Docs\NPR_Manual_Reports_Final_09-10-12.pdf" />
+    <None Include="Npr\Docs\NPR_PasswordResetInstructions_8-30-12.doc" />
+    <None Include="Npr\Docs\NPR_User_Manual_PAM.pdf" />
+    <None Include="Npr\Docs\NPR_User_Manual_Resource_Report_508_4-16-12.pdf" />
+    <None Include="Npr\Docs\Overview_of_SHIPNPR_4-23-12_final.pdf" />
+    <Content Include="Bin\Interop.ADODB.dll" />
+    <Content Include="Bin\Interop.CDO.dll" />
+    <Content Include="css\examples.css" />
+    <Content Include="examples.css" />
+    <Content Include="KeepAlive.aspx" />
+    <Content Include="scripts\global1.js" />
+    <Content Include="scripts\jquery-1.3.2.min.js" />
+    <Content Include="scripts\jquery-idleTimeout.js" />
+    <Content Include="scripts\jquery-ui-1.7.2.custom.min.js" />
+    <Content Include="src\jquery.idletimeout.js" />
+    <Content Include="src\jquery.idletimer.js" />
+    <Content Include="User\ChangeEmail.aspx" />
+    <Content Include="Bin\FredCK.FCKeditorV2.dll" />
+    <Content Include="Bin\Interop.ADODB.dll" />
+    <Content Include="Bin\Interop.CDO.dll" />
+    <Content Include="images\arrow_ltr.gif" />
+    <Content Include="css\print.css" />
+    <Content Include="ShiptalkWebWideNoTab.Master" />
+    <Content Include="css\images\calendar.gif" />
+    <Content Include="images\ascending.gif" />
+    <Content Include="images\bgHomeContentBox.png" />
+    <Content Include="images\bgHomeFindACounselorBox.png" />
+    <Content Include="images\bgHomeFindAShipBox.png" />
+    <Content Include="images\bgNavBoxContent.png" />
+    <Content Include="images\bgNavBoxHeader.png" />
+    <Content Include="images\descending.gif" />
+    <Content Include="images\header.png" />
+    <Content Include="images\ilBgDoc.png" />
+    <Content Include="images\ilBgDocHover.png" />
+    <Content Include="images\ilBgFolder.png" />
+    <Content Include="images\ilBgFolderHover.png" />
+    <Content Include="images\ilBgHover.png" />
+    <Content Include="images\ilBgPdf.png" />
+    <Content Include="images\ilBgPdfHover.png" />
+    <Content Include="images\ilBgTxt.png" />
+    <Content Include="images\ilBgTxtHover.png" />
+    <Content Include="ErrorPages\UnAuthorizedAccess.aspx" />
+    <Content Include="UserControls\UserTab.ascx" />
+    <Content Include="User\Admin\PendingUniqueIdRequests.aspx" />
+    <Content Include="User\Admin\PendingUniqueIdUserView.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Npr\Docs\SHIP_NPR_User Manual_508.pdf" />
+    <None Include="SHIP\Pdf\Local_SHIP_Site_Profile_Template_External.pdf" />
+    <None Include="SHIP\Pdf\State_SHIP_Profile_Template_External.pdf" />
+    <None Include="SHIP\Pdf\State_SHIP_Profile_Template_Internal.pdf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>1581</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
